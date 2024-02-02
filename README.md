@@ -1,1 +1,1 @@
-site que consome api de clima
+site em react que consome api de clima
