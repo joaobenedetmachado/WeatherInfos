@@ -1,5 +1,26 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #fafafa;
+  flex-direction: column;
+  
+}
+
+.inputArea {
+  width: 1040px;
+}
+
+.MainMenu {
+  height: 700px;
+  width: 1000px;
+  background-color: #282c34;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  padding: 20px;
 }
 
 .App-logo {

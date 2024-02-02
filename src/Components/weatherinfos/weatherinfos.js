@@ -5,9 +5,9 @@ const WeatherInfos = (props) => {
     <div
       style={{
         width: '310px',
-        height: 'auto',
-        backgroundColor: '#252525',
-        borderRadius: '20px',
+        height: '700px',
+        backgroundColor: '#fafafa',
+        borderRadius: '10px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -16,7 +16,7 @@ const WeatherInfos = (props) => {
     >
         <p
          style={{
-            color: '#ffffff',
+            color: '#252525',
             fontSize: '28px',
          }}
         >
@@ -29,7 +29,7 @@ const WeatherInfos = (props) => {
         src={props.weatherImage} alt="Weather" />
         <p
          style={{
-            color: '#ffffff',
+            color: '#252525',
             fontSize: '85px',
          }}
         >
