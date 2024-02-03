@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import WeatherInfos from './Components/weatherinfos/weatherinfos';
-import InputSearch from './Components/inputSearch/inputSearch'; // Corrigido o import
+import InputSearch from './Components/inputSearch/inputSearch';
 
 function App() {
   const [text, setText] = useState('');
@@ -12,7 +12,7 @@ function App() {
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
-      // Faça algo quando a tecla Enter for pressionada
+      // funcao para chamar a api
     }
   };
 
