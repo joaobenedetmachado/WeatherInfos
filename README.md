@@ -1,1 +1,1 @@
-vou fazer um site que consome uma api de clima
+site em react que consome api de clima
