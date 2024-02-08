@@ -58,6 +58,7 @@ function App() {
           temp={`${weatherData.main && weatherData.main.temp}°`}
           sense={`sensação térmica de ${weatherData.main && weatherData.main.feels_like}°`}
         />
+        {/* aqui fazer a area que vai ter todas as outras informacoes do api */}
       </div>
     </div>
   );
