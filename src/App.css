@@ -11,6 +11,11 @@
 
 .inputArea {
   width: 1040px;
+  height: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: flex;
 }
 
 .MainMenu {
@@ -56,4 +61,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.inputButton {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209,213,219);
+  border-radius: .5rem;
+  color: #111827;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.inputButton:hover {
+  background-color: #f9fafb;
+}
+
+.inputButton:focus {
+  outline: 2px solid rgba(0,0,0,0.1);
+  outline-offset: 2px;
+}
+
+.inputButton:focus-visible {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
