@@ -1,9 +1,10 @@
-import './App.css';
+// App.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import WeatherInfos from './Components/weatherinfos/weatherinfos';
 import InputSearch from './Components/inputSearch/inputSearch';
 import WeatherData from './Components/weatherData/weatherData';
+import Style from './App.css'
 
 const api = {
   key: "24897893e27c26a4a999b9250bbc38d0",
@@ -42,8 +43,6 @@ function App() {
     }
   };
 
-  const pairs = Object.entries(weatherData);
-
   return (
     <div className="App">
       <div className="inputArea" >
@@ -58,8 +57,8 @@ function App() {
       <div className='MainMenu'>
         <WeatherInfos
           value={weatherData.name}
-          weatherImage={require('./midia/sol.png')}
-          temp={`${weatherData.main && weatherData.main.temp || `0` }°` }
+          weather={weatherData.weather && weatherData.weather[0].main}
+          temp={`${weatherData.main && weatherData.main.temp || `0` }°`}
           sense={`sensação térmica de ${weatherData.main && weatherData.main.feels_like || `0`}°`}
         />
         <WeatherData text={weatherData} />
