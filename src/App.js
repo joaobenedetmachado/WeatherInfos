@@ -5,13 +5,7 @@ import WeatherInfos from './Components/weatherinfos/weatherinfos';
 import InputSearch from './Components/inputSearch/inputSearch';
 import WeatherData from './Components/weatherData/weatherData';
 import Style from './App.css'
-
-const api = {
-  key: "24897893e27c26a4a999b9250bbc38d0",
-  base: "https://api.openweathermap.org/data/2.5/",
-  lang: "pt_br",
-  units: "metric"
-}
+import api from './api-config'
 
 function getUsers(text) {
   const url = `${api.base}weather?q=${text}&lang=${api.lang}&units=${api.units}&APPID=${api.key}`;
@@ -26,6 +20,7 @@ function getUsers(text) {
 function App() {
   const [text, setText] = useState('');
   const [weatherData, setWeatherData] = useState({});
+  console.log(api.key);
 
   const handleChange = (event) => {
     setText(event.target.value);
