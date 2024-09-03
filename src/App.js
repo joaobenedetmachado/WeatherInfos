@@ -20,7 +20,6 @@ function getUsers(text) {
 function App() {
   const [text, setText] = useState('');
   const [weatherData, setWeatherData] = useState({});
-  console.log(api.key);
 
   const handleChange = (event) => {
     setText(event.target.value);
